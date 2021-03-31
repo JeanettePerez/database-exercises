@@ -20,6 +20,8 @@ SELECT name_of_album
     AS 'ALL Rock albums'
     FROM albums
     WHERE genre LIKE "%rock%";
-
-
+SELECT name_of_album
+    AS 'Albums with less than 20 million certified sales'
+    FROM albums
+    WHERE sales < 20;
 
