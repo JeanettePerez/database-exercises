@@ -1,4 +1,5 @@
 USE codeup_test_db;
+TRUNCATE albums;
 
 INSERT INTO albums(artist, name_of_album, release_date, genre, sales)
         VALUES
