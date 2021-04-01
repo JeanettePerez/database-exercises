@@ -9,8 +9,15 @@ USE employees;
 --     FROM salaries
 --     ORDER BY salary DESC
 --     LIMIT 5;
+--
+-- SELECT emp_no
+--     FROM salaries
+--     ORDER BY salary DESC
+--     LIMIT 4 OFFSET 46;
 
-SELECT emp_no
-    FROM salaries
-    ORDER BY salary DESC
-    LIMIT 4 OFFSET 46;
+SELECT CONCAT(first_name, ' ', last_name)
+    AS 'Employee names'
+    FROM employees
+    LIMIT 100;
+
+
