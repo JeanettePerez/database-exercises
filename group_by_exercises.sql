@@ -1,6 +1,6 @@
 SELECT DISTINCT title
-    FROM titles
-    group by title;
+    FROM titles;
+
 
 SELECT DISTINCT last_name
     FROM employees
@@ -20,8 +20,8 @@ GROUP BY last_name;
 
 SELECT COUNT(last_name), last_name
     FROM employees
-    WHERE last_name like ''%q%''
-    AND NOT last_name LIKE ''%qu%''
+    WHERE last_name like '%q%'
+    AND NOT last_name LIKE '%qu%'
     GROUP BY last_name
     ORDER BY COUNT(last_name);
 
