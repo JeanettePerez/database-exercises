@@ -61,4 +61,10 @@ USE employees;
 --     AND day(birth_date) = 25
 --     ORDER BY birth_date, hire_date DESC;
 
-
+SELECT *, datediff(now(), hire_date)
+    AS 'Days employed '
+    FROM employees
+    WHERE YEAR(hire_date) BETWEEN 1990 AND 1999
+        AND MONTH(birth_date) = 12
+        AND day(birth_date) = 25
+    ORDER BY birth_date ASC;
